@@ -1,0 +1,5 @@
+ for i,v in pairs(getgc(true)) do 
+            if type(v) == 'table' and table.find(v,'X1') ~= nil then --use rawget so you dont index the table directly
+                return v
+            end 
+        end
